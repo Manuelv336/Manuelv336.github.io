@@ -1,7 +1,6 @@
 /* 1. Body - background and text colors */
 body {
     font-family: serif; 
-    line-height: 1.5;
     color: #000;
     background-color: #f9f9f9;
     padding: 18px;
@@ -41,3 +40,4 @@ a:hover {
     color: #555;
 
 }
+
