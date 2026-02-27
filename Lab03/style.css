@@ -3,7 +3,6 @@ body {
     font-family: serif; 
     color: #000;
     background-color: #f9f9f9;
-    padding: 18px;
 }
 /* 2. Headings */
 h1, h2, h3 {
@@ -11,7 +10,7 @@ h1, h2, h3 {
 }
 /* 3. Paragraphs */
 p {
-    margin-bottom: 17px;
+   font-family: Arial;
 }
 /* 4. Links */
 a {
@@ -29,6 +28,7 @@ a {
     color: #555;
 
 }
+
 
 
 
