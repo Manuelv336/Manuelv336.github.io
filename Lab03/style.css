@@ -1,35 +1,31 @@
-/* 1. Body - background and text colors */
 body {
     font-family: serif; 
-    color: #000;
-    background-color: #f9f9f9;
+    line-height: 1.4;
+    color: black;
+    background-color: rgba(202, 210, 231, 0.61);
+    padding: 20px;
 }
-/* 2. Headings */
 h1, h2, h3 {
-    color: #1a5276;
+    color: navy;
 }
-/* 3. Paragraphs */
 p {
-   font-family: Arial;
+    margin-bottom: 16px;
+    line-height: 1.4;
 }
-/* 4. Links */
 a {
-    color: #cb4335;
-    text-decoration: none;
+    color: blue;
 }
-{
-/* 5. One ID selector */
+a:hover {
+    text-decoration: underline;
+}
 #main-header {
     text-align: center;
+    border-bottom: 2px solid #92737373;
+    padding-bottom: 12px;
 }
-/* 6. One class selector */
 .date-line {
-    font-style: italic;
-    color: #555;
-
+    font-style: bold;
+    margin-bottom: 14px;
+    color: #555555;
+    box-sizing: content-box;
 }
-
-
-
-
-
