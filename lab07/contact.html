@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <script> 
+    function validateForm() {
+        let name = document.form ["form"]["name"].value;
+        if (name == "") {
+            alert("Name is required ");
+            return false;
+        }
+        let email = document.form ["form"]["email"].value;
+        if (email == "") {
+            alert("Email is required");
+            return false;
+        }
+        return true;
+    }
+</script>
+</head>
+<body>
+     <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="tierlist.html">Food List</a>
+          <a href="contact.html">Feedback</a>
+    </nav>
+    <br>
+    <h1>Feedback Form</h1>
+    <p class ="intro">Please provide your feedback on one of the dishes from the home page by filling out the form below:</p>
+    <form name="form" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br><br>
+        <label for="message">Feedback:</label>
+        <textarea id="message" name="message" placeholder="Enter your feedback"></textarea>
+        <br><br>
+        <label for="feedback">Feedback Type:</label>
+        <input type="radio" id="positive" name="feedback" value="positive">
+        <label for="positive">Positive</label>
+        <input type="radio" id="negative" name="feedback" value="negative">
+        <label for="negative">Negative</label>
+        <br><br>
+        <label for="food">What food are you reviewing?</label>
+        <select id="food" name="food">
+            <option value="">Select a dish</option>
+            <option value="baleadas">Baleadas</option>
+            <option value="pupusas">Pupusas</option>
+            <option value="tacos">Tacos al Pastor</option>
+            <option value="mofongo">Mofongo</option>
+            <option value="bandeja">Bandeja paisa</option>
+            <option value="mangu">Mangu</option>
+        </select><br><br>
+         <br><br>
+        <label for="rating">How would you rate it :</label>
+        <select id="rating" name="rating">
+            <option value="">Select a rating</option>
+            <option value="rank1">Rank 1 Amazing</option>
+            <option value="rank2">Rank 2 Good</option>
+            <option value="rank3">Rank 3 Average</option>
+            <option value="rank4">Rank 4 Poor</option>
+            <option value="rank5">Rank 5 Terrible</option>
+            <option value="rank6">Rank 6 Horrible</option>
+        </select><br><br>
+        <input type="checkbox" id="voting" name="voting">
+        <label for="voting">I have tried this dish</label>
+        <br><br>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+<footer><p>&copy; 2026 Manuel Valerio. Lab 07-Table/Forms </p></footer>
+</html>
