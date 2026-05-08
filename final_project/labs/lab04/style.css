@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;  
+  background-image: url("images/explore_nature.jpg");
+  background-attachment: fixed;
+  }
+main {
+padding: 0px;
+}
+
+header, section, footer {
+  background-color: rgba(255, 255, 255, 0.932); 
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  width: 45%; 
+  border-radius: 10px; 
+}
+nav ul {
+  text-align: left;      
+  padding: 0;          
+}
+section {
+  font-weight: bold; 
+  font-size: 18px;   
+}
